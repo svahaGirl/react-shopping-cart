@@ -1,20 +1,16 @@
-
+// feature 1  new branch for github created
 
 
 function App() {
   return (
     <div className="grid-container">
-      <header className="App-header">
+      <header>
         <a href="/">React Shopping Cart</a>
       
       </header>
-      <main>
-        Product List
-      </main>
+      <main>Product List</main>
 
-      <footer>
-        All right is reserved.
-      </footer>
+      <footer>All right is reserved.</footer>
     </div>
   );
 }
