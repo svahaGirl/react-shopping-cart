@@ -44,8 +44,8 @@ header a{
 
 main{
   grid-area: main;
-
-  color: white;
+  background-color: #ffffff;
+  color:#203040;
 }
 /*make footer background is blue, and word color is white, words in center, align-items makes it vertically center*/
 footer{
