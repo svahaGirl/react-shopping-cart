@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // use rcc to generate code
-  //pass sort value here
+  //pass sort value 
 
 export default class Filter extends Component {
     render() {
