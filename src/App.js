@@ -1,4 +1,5 @@
 // feature 1  new branch for github created
+// filter component created
 import React from 'react';
 import data from "./data.json";
 import Products from './components/Products';
