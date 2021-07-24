@@ -37,7 +37,7 @@ a:hover{
 }
 header{
   grid-area: header;
-  background-color: #203040;
+  background-color: #535353;
   color: white;
   display: flex;
   align-items: center;
@@ -52,12 +52,12 @@ header a{
 main{
   grid-area: main;
   background-color: #ffffff;
-  color: #203040;
+  color: #121b12;
 }
 /*make footer background is blue, and word color is white, words in center, align-items makes it vertically center*/
 footer{
   grid-area: footer;
-  background-color:#203040;
+  background-color:#535353;
   color: #ffffff;
   display: flex;
   justify-content: center;
@@ -68,8 +68,6 @@ footer{
 .content{
   display: flex;
   flex-wrap: wrap;
-
-
 }
 
 .main{
@@ -108,6 +106,10 @@ footer{
 .product img{
   max-width: 37rem;
   max-height: 37rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
 }
 
 .product-price{
@@ -121,6 +123,11 @@ footer{
   text-align: center;
   flex: 1;
 }
+/*
+.product-price div{
+  font-size: 2rem;
+}
+*/
 .button{
   padding: 1rem;
   border: .1rem #c0c0c0 solid;
@@ -132,4 +139,17 @@ footer{
 }
 .button.primary{
   background-color:#f0c040;
+}
+
+/* Filter*/
+.filter{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem;
+  border-bottom: .1rem #c0c0c0 solid;
+}
+
+.filter div{
+  flex: 1;
 }
