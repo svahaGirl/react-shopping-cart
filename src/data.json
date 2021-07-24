@@ -1,7 +1,7 @@
 {
     "products":[
         {
-        "_id": "1",
+        "_id": "dress1",
         "image": "/images/dress1.jpg",
         "title":"Sundress with shirring detail",        
         "description": "This is for all the latest trends",
@@ -10,7 +10,7 @@
 
         },
         {
-            "_id": "2",
+            "_id": "dress2",
             "image": "/images/dress2.jpg",
             "title":"Sundress with ruched front",        
             "description": "Most popular",
@@ -19,7 +19,7 @@
 
         },
         {
-            "_id": "3",
+            "_id": "dress3",
             "image": "/images/dress3.jpg",
             "title":"Sundress for young soul",
             "description": "Dynamic feeling",
@@ -28,7 +28,7 @@
 
         },
         {
-        "_id": "4",
+        "_id": "dress4",
         "image": "/images/dress4.jpg",
         "title":"Imported from asian",       
         "description": "Best seller this summer",
@@ -37,7 +37,7 @@
 
         },
         {
-            "_id": "5",
+            "_id": "dress5",
             "image": "/images/dress5.jpg",
             "title":"Summer cool dress",           
             "description": "for happy summer",
@@ -46,7 +46,7 @@
 
         },
         {
-        "_id": "6",
+        "_id": "dress6",
         "image": "/images/dress6.jpg",
         "title":"Eroupe style dress",        
         "description": "new design",
