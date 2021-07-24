@@ -1,0 +1,52 @@
+{
+    "products":[
+        {
+        "_id": "dress1",
+        "image": "/images/dress1.jpg",
+        "title":"Midi sundress with shirring detail",        
+        "description": "This is for all the latest trends",
+        "price": 138,
+        "availableSize": ["X","L","XL","XXL"]
+        },
+        {
+            "_id": "dress2",
+            "image": "/images/dress2.jpg",
+            "title":"Midi sundress with ruched front",        
+            "description": "Most popular",
+            "price": 118,
+            "availableSize": ["XL","XXL","L"]
+        },
+        {
+            "_id": "dress3",
+            "image": "/images/dress3.jpg",
+            "title":"MIdi sundress for young soul",
+            "description": "Dynamic feeling",
+            "price": 129,
+            "availableSize": ["XL","XXL","M"]
+        },
+        {
+        "_id": "dress4",
+        "image": "/images/dress4.jpg",
+        "title":"Imported from asian",       
+        "description": "Best seller this summer",
+        "price": 269,
+        "availableSize": ["XL","XXL","L","M"]
+        },
+        {
+            "_id": "dress5",
+            "image": "/images/dress5.jpg",
+            "title":"Summer cool dress",           
+            "description": "for happy summer",
+            "price": 259,
+            "availableSize": ["XL","XXL","S","M","L"]
+        },
+        {
+        "_id": "dress6",
+        "image": "/images/dress6.jpg",
+        "title":"Eroupe style dress",        
+        "description": "new design",
+        "price": 249,
+        "availableSize": ["XL","L","M","S"]
+        }                    
+    ]
+}
