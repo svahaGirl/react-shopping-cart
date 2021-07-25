@@ -1,7 +1,7 @@
 // feature 1  new branch for github created
 // filter component created
 import React from 'react';
-import data from "./data.json";
+//import data from "./data.json";
 import Products from './components/Products';
 import Filter from './components/Filter';
 import Cart from './components/Cart';
@@ -11,32 +11,33 @@ import { Provider } from 'react-redux';
 
 class App extends React.Component {
 
-  constructor(){
+/* constructor(){
     super();
     this.state ={
       products: data.products,
       cartItems: localStorage.getItem("cartItems")
       ? JSON.parse(localStorage.getItem("cartItems"))
       :[],
-      size: "",
-      sort: "",
+ //     size: "",
+ //     sort: "",
     };
-  }
+  }*/
 
+/*
   createOrder = (order) => {
     alert("Need to save order for " + order.name);
-  };
+  };*/
 
-  removeFromCart =(product) => {
+  /*removeFromCart =(product) => {
     const cartItems = this.state.cartItems.slice();
     this.setState({ 
       cartItems: cartItems.filter(x=>x._id !== product._id),
     });
     localStorage.setItem("cartItems",JSON.stringify(this.state.cartItems));
-  };
+  };*/
 
 
-  addToCart = (product) => {
+  /*addToCart = (product) => {
     const cartItems = this.state.cartItems.slice();
     let alreadyInCart = false;
     cartItems.forEach((item) => {
@@ -51,10 +52,10 @@ class App extends React.Component {
     this.setState({cartItems});
     localStorage.setItem("cartItems",JSON.stringify(cartItems));
   };
+*/
 
 
-
-  sortProducts = (event) => {
+/*  sortProducts = (event) => {
     const sort = event.target.value;
     console.log(event.target.value);
     this.setState((state) => ({
@@ -71,7 +72,8 @@ class App extends React.Component {
       ),
     }));
   };
-
+  */
+/*
   filterProducts = (event) => {
     console.log(event.target.value);
     if(event.target.value === ""){
@@ -85,7 +87,7 @@ class App extends React.Component {
       });
     }            
   };
-
+*/
   render() { 
   return (
     <Provider store={store}>
@@ -97,22 +99,16 @@ class App extends React.Component {
       <main>
         <div className = "content">
           <div className= "main">
-            <Filter count ={ this.state.products.length}>
-              size={ this.state.size}
-              sort={ this.state.sort}
-              filterProducts = { this.filterProducts}
-              sortProducts = { this.sortProducts}
+
+          
+            <Filter>              
             </Filter>
 
-            <Products products={this.state.products}
-                      addToCart={this.addToCart}>
+            <Products>
             </Products>
           </div>
           <div className="sidebar">
-              <Cart 
-                cartItems={this.state.cartItems} 
-                removeFromCart={this.removeFromCart}/>
-                createOrder={this.createOrder}
+              <Cart/> 
           </div>
 
         </div>

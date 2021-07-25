@@ -3,9 +3,9 @@
     import Fade from "react-reveal/Fade";
     import Modal from "react-modal";
     import Zoom from "react-reveal/Zoom";
-    /*import { removeFromCart } from "../actions/cartActions";
+    import { removeFromCart } from "../actions/cartActions";
     import { connect } from "react-redux";
-    import { createOrder, clearOrder } from "../actions/orderActions";*/
+    import { createOrder, clearOrder } from "../actions/orderActions";
 
     class Cart extends Component {
     constructor(props) {
