@@ -11,7 +11,7 @@ import { Provider } from 'react-redux';
 
 class App extends React.Component {
 
-  constructor(){
+/* constructor(){
     super();
     this.state ={
       products: data.products,
@@ -21,22 +21,23 @@ class App extends React.Component {
  //     size: "",
  //     sort: "",
     };
-  }
+  }*/
 
+/*
   createOrder = (order) => {
     alert("Need to save order for " + order.name);
-  };
+  };*/
 
-  removeFromCart =(product) => {
+  /*removeFromCart =(product) => {
     const cartItems = this.state.cartItems.slice();
     this.setState({ 
       cartItems: cartItems.filter(x=>x._id !== product._id),
     });
     localStorage.setItem("cartItems",JSON.stringify(this.state.cartItems));
-  };
+  };*/
 
 
-  addToCart = (product) => {
+  /*addToCart = (product) => {
     const cartItems = this.state.cartItems.slice();
     let alreadyInCart = false;
     cartItems.forEach((item) => {
@@ -51,7 +52,7 @@ class App extends React.Component {
     this.setState({cartItems});
     localStorage.setItem("cartItems",JSON.stringify(cartItems));
   };
-
+*/
 
 
 /*  sortProducts = (event) => {
@@ -103,14 +104,11 @@ class App extends React.Component {
             <Filter>              
             </Filter>
 
-            <Products addToCart={this.addToCart}>
+            <Products>
             </Products>
           </div>
           <div className="sidebar">
-              <Cart 
-                cartItems={this.state.cartItems} 
-                removeFromCart={this.removeFromCart}/>
-                createOrder={this.createOrder}
+              <Cart/> 
           </div>
 
         </div>

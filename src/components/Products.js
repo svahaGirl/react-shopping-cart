@@ -5,6 +5,7 @@ import Modal from "react-modal";
 import Zoom from "react-reveal/Zoom";
 import {connect} from "react-redux";
 import {fetchProducts} from '../actions/productActions';
+import {addToCart} from '../actions/cartActions';
 
 class Products extends Component {
 
@@ -103,4 +104,5 @@ class Products extends Component {
 
 export default connect((state) => ({products: state.products.filtereditems}), 
 { fetchProducts,
+    addToCart, 
 })(Products); 
