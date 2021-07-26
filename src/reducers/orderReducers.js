@@ -1,5 +1,5 @@
-import { CLEAR_ORDER, CREATE_ORDER, FETCH_ORDERS } from "../types";
 
+import { CLEAR_ORDER, CREATE_ORDER, FETCH_ORDERS } from "../types";
 
 const orderReducer = (state = {}, action) => {
 
