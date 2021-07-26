@@ -1,15 +1,38 @@
 // feature 1  new branch for github created
 // filter component created
 import React from 'react';
-//import data from "./data.json";
-import Products from './components/Products';
-import Filter from './components/Filter';
-import Cart from './components/Cart';
 import store from "./store";
 import { Provider } from 'react-redux';
+import {BrowserRouter, Route, Link } from "react-router-dom";
+import HomeScreen from './actions/screens/HomeScreen';
+import AdminScreen from './actions/screens/AdminScreen';
 
 
 class App extends React.Component {
+  render() { 
+  return (
+      <Provider store={store}>
+        <BrowserRouter>
+          <div className="grid-container">
+              <header>
+                <Link to="/">React Shopping Cart</Link> 
+                <Link to="/admin">Admin</Link>             
+              </header>
+              <main>
+              <Route path="/admin" component = { AdminScreen }/>
+              <Route path="/" component ={HomeScreen} exact/>
+            </main>
+
+              <footer>All right is reserved.</footer>
+          </div>
+      </BrowserRouter>
+    </Provider>
+  );
+  }
+}
+
+export default App;
+
 
 /* constructor(){
     super();
@@ -88,39 +111,3 @@ class App extends React.Component {
     }            
   };
 */
-  render() { 
-  return (
-    <Provider store={store}>
-    <div className="grid-container">
-      <header>
-        <a href="/">React Shopping Cart</a>
-      
-      </header>
-      <main>
-        <div className = "content">
-          <div className= "main">
-
-          
-            <Filter>              
-            </Filter>
-
-            <Products>
-            </Products>
-          </div>
-          <div className="sidebar">
-              <Cart/> 
-          </div>
-
-        </div>
-
-
-      </main>
-
-      <footer>All right is reserved.</footer>
-    </div>
-    </Provider>
-  );
-  }
-}
-
-export default App;

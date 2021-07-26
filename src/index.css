@@ -40,6 +40,7 @@ header{
   background-color: #535353;
   color: white;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: .5rem;
 }
@@ -286,3 +287,24 @@ input{
 .success-message{
   color: green;
 }
+
+/* Orders */
+
+.orders{
+  width: 100%;
+  padding: 10px;
+}
+
+tbody > tr:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+
+td{
+  padding: 5px;
+}
+
+th{
+  text-align: left;
+}
+
+
