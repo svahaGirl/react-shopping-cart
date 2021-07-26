@@ -40,6 +40,7 @@ header{
   background-color: #535353;
   color: white;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: .5rem;
 }
@@ -257,3 +258,52 @@ input{
   top: 2.5rem;
   z-index: 1000;
 }
+
+/*Order Details */
+
+.order-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.order-details li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-details li div{
+  padding: 10px;
+}
+
+.order-details .items{
+  text-align: right;
+  padding: 0;
+}
+
+.success-message{
+  color: green;
+}
+
+/* Orders */
+
+.orders{
+  width: 100%;
+  padding: 10px;
+}
+
+tbody > tr:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+
+td{
+  padding: 5px;
+}
+
+th{
+  text-align: left;
+}
+
