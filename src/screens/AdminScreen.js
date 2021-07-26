@@ -1,11 +1,13 @@
 import React, {Component} from "react";
+import Orders from "../components/Orders";
 
 export default class AdminScreen extends Component {
 
     render(){
-        return<div>
+        return(<div>
         
-            Orders
-            </div>;
+        <Orders/>
+            </div>
+        );
     }
 }

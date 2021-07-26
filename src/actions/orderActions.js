@@ -1,9 +1,4 @@
-
-
 import { CLEAR_CART, CLEAR_ORDER, CREATE_ORDER, FETCH_ORDERS } from "../types";
-
-
-
 
 export const createOrder = (order) => (dispatch) => {
 
